@@ -11,9 +11,4 @@
    FROM `capstone-project2023.cyclistic_trip_data.combined_tripdata`
    GROUP BY member_type, ride_day
 
---  Type of ride by member type 
 
-   SELECT rideable_type, member_type, count(*) AS type_of_ride
-   FROM `capstone-project2023.cyclistic_trip_data.combined_tripdata`
-   GROUP BY rideable_type, member_type
-   ORDER BY member_type, type_of_ride DESC
